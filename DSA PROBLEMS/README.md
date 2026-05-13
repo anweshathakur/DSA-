@@ -40,6 +40,3 @@ To run any of the C++ solutions, ensure you have a C++ compiler (like `g++`) ins
 g++ "FileName.cpp" -o output
 ./output
 ```
-
----
-*Keep practicing and happy coding!*
