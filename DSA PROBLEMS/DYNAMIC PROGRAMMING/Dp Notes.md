@@ -285,3 +285,46 @@ dp[n][capacity]
 
 Thus each state is solved only once.
 
+# Unbounded Knapsack
+
+multiple occurences of the same item is allowed in Unbiunded Knapsack.
+logic- 
+if the item is already included we consider it to be unprocessed , so that it can be considered for repetition as well.
+but if we exclude an item , it is considered to be processed. It will not be repeated again in the process , it becomes unelligible.
+
+## Code and Logic
+```cpp
+#include <iostream>
+//initialization remains same as before 
+int knapsack(int wt[], int val[], int w, int n){
+    //base condition
+    if(n == 0 || capacity == 0){
+        return 0;
+    }
+
+    // choice 
+    // If the current item can fit inside the remaining capacity
+    if(weight[n-1] <= capacity){
+
+        // Choice 1 : Include the current item
+        // Add its value and dont reduce the remaining capacity
+        include = value[n-1] +
+                solve(n , capacity - weight[n-1]);
+
+        // Choice 2 : Exclude the current item
+        // Move to the next item without changing capacity
+        exclude = solve(n-1, capacity);
+
+        // Return the maximum profit from both choices
+        return max(include, exclude);
+    }
+
+    // If the current item cannot fit in the sack
+    else{
+
+        // Skip the current item
+        return solve(n-1, capacity);
+    }
+}
+
+```
