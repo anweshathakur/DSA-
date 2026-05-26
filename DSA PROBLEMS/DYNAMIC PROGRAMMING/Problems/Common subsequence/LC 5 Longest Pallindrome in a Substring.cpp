@@ -29,7 +29,7 @@ s consists of only digits and English letters.
 
 /*
 EDITORIAL : 
-
+https://leetcode.com/problems/longest-palindromic-substring/solutions/8293973/longest-palindrome-in-a-string-interval-sk423/
 */
 #include <bits/stdc++.h>
 using namespace std;
