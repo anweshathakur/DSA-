@@ -22,4 +22,27 @@ The Loop Order: Instead of looping through items from 0 to n, you usually loop b
 ## examples : 
 substrings
 palindromes within a single string
-merging/bursting elements next to each other, 
+merging/bursting elements next to each other
+
+# Longest Common Subsequence 
+
+### Types :
+
+1. Largest Common Substring 
+2. Print LCS
+3. Shortest Common supersequence 
+4. Print  SCS 
+5. Min # of insertion and Deletion a -> b 
+6. Largest Repeating subsequences 
+7. lenght of largest subsequence of a substring
+8. subsequnce for pattern matching 
+9. count the number of times a appears as a substring 
+10. Largest palindrome subsequence 
+11. Largest Palindromic substring
+12. Count of palindromic substring 
+13. min # of a deletion in a strting to make it palindrome 
+14. min # insertions in a string to make it palindrome
+
+---
+
+recursive -> memorization -> top - down 
