@@ -64,7 +64,7 @@ If the values getting repeated after calculation , unrequired working can be avo
 
 ### Deciding upon the matrix
 size of matrix - ``` n * m ```
-
+depends upon - ``` size of strings -- n+ 1 ; m + 1 ```
 
 ### How does it work ?
 
