@@ -6,7 +6,7 @@ This repository contains a curated collection of Data Structures and Algorithms 
 
 The problems are organized into the following categories:
 
-- **[ARRAYS](./ARRAYS/)**: Binary Search, Two Pointers, Prefix Sum, Sliding Window, and Kadane's Algorithm.
+- **[ARRAYS](./ARRAYS/)**: Binary Search, Two Pointers, Prefix Sum, Sliding Window, and Kadane's Algorithm
 - **[LINKED LISTS](./LINKED%20LISTS/)**: Fast & Slow Pointers, Merging, Deletion, and Reversal.
 - **[STACKS](./STACKS/)**: Balanced Parentheses, Tower of Hanoi, and Stack Reversal.
 - **[STRINGS](./STRINGS/)**: String manipulation, Edit distance, and Palindrome checks.
