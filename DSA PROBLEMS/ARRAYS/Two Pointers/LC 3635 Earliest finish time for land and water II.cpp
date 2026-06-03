@@ -1,4 +1,3 @@
-//LC 3633 Earliest Finish time for Land and water rides
 /*
 You are given two categories of theme park attractions: land rides and water rides.
 
@@ -59,26 +58,25 @@ Plan A provides the earliest finish time of 14.​​​​​​​
 
 Constraints:
 
-1 <= n, m <= 100
+1 <= n, m <= 5 * 104
 landStartTime.length == landDuration.length == n
 waterStartTime.length == waterDuration.length == m
-1 <= landStartTime[i], landDuration[i], waterStartTime[j], waterDuration[j] <= 1000
+1 <= landStartTime[i], landDuration[i], waterStartTime[j], waterDuration[j] <= 105
 */
-
 #include <bits/stdc++.h>
-using namespace std;
-int earliestFinishTime(vector<int>& landStartTime, vector<int>& landDuration, vector<int>& waterStartTime, vector<int>& waterDuration) {
-    int n = landStartTime.size();
-    int m = waterStartTime.size();
-    int earliestFinish = INT_MAX;
-
-    for (int i = 0; i < n; i++) {
-        for (int j = 0; j < m; j++) {
-            // Plan A: Land ride first, then water ride
-            int finishLandFirst = max(landStartTime[i] + landDuration[i], waterStartTime[j]) + waterDuration[j];
-            // Plan B: Water ride first, then land ride
-            int finishWaterFirst = max(waterStartTime[j] + waterDuration[j], landStartTime[i]) + landDuration[i];
-            earliestFinish = min(earliestFinish, min(finishLandFirst, finishWaterFirst));
+class Solution {
+public:
+    int earliestFinishTime(std::vector<int>& landStartTime, std::vector<int>& landDuration, std::vector<int>& waterStartTime, std::vector<int>& waterDuration) {
+        int n = landStartTime.size(), m = waterStartTime.size();
+        int ans = INT_MAX;
+        for (int i = 0; i < n; i++) {
+            for (int j = 0; j < m; j++) {
+                int landFinish = landStartTime[i] + landDuration[i];
+                int waterFinish = waterStartTime[j] + waterDuration[j];
+                ans = std::min(ans, std::max(landFinish, waterStartTime[j]) + waterDuration[j]);
+                ans = std::min(ans, std::max(waterFinish, landStartTime[i]) + landDuration[i]);
+            }
         }
+        return ans;
     }
-
+};
