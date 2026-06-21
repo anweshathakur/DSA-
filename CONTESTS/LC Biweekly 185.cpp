@@ -1,4 +1,4 @@
-// LC Biweekly contest 183
+// LC Biweekly contest 185
 
 // =============================================================================
 // Problem 1: 
@@ -130,7 +130,7 @@ Therefore, the minimum number of additional bulbs required is 1.
 Constraints:
 
 1 <= n == lights.length <= 105
-0 <= lights[i] <= n©leetcode
+0 <= lights[i] <= n
 */
 #include <bits/stdc++.h>
 #include <bits/stdc++.h>
