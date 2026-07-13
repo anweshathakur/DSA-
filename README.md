@@ -26,10 +26,6 @@ Beyond standard DSA problems, this folder also includes mini-projects implemente
 
 Each `.cpp` file is structured as follows:
 - **Problem Statement**: A clear description of the task.
-- **Editorial**: 
-    - **Intuition**: The "why" behind the solution.
-    - **Approach**: Step-by-step logic.
-    - **Complexity**: Time and Space analysis.
 - **Solution**: Clean and optimized C++ code (often including both Brute Force and Optimal approaches).
 
 ## 🛠️ Usage
