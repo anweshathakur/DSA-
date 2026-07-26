@@ -326,5 +326,5 @@ int knapsack(int wt[], int val[], int w, int n){
         return solve(n-1, capacity);
     }
 }
-
 ```
+ 
