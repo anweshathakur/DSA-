@@ -89,7 +89,7 @@ int main() {
         long long ans = 0;
 
         for (int i = 1; i <= n; i++) {
-            int64 k = n / i;
+            int k = n / i;
             ans += k * k;
         }
 
