@@ -56,13 +56,14 @@ void insertAtPosition(Node** head, int val, int pos) {
         cur_pos++;
     }
     
+    Node* new_node = createNode(val);
     if (temp == NULL) {
         printf("Position out of bounds\n");
         free(new_node);
         return;
     }
     
-    Node* new_node = createNode(val);
+    
     new_node->next = temp->next;
     temp->next = new_node;
 }
